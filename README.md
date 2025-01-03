@@ -14,7 +14,7 @@ Website giúp người dùng mua tài khoản Giả Vinh Diệu đã được x�
 
 
 ## Cài đặt
-Tải dự án về máy bằng drive 
+Tải dự án về máy bằng git
 ```bash
     git clone https://github.com/longhehe21/ShopAccVGVD.git
 ```
