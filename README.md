@@ -54,7 +54,7 @@ Tôi là Hà Thành Long ,21 tuổi đang là sinh viên năm 4 trường Đại
 
 **Ngôn Ngữ:** HTML,CSS,PHP,Javascip
 
-**Thư Viện:** fontawesome-free-6.4.0
+**Thư Viện:** fontawesome-free-6.4.0 ,ckeditor ,ckfinder
 
 **Server:** Xampp-8.2.12
 
