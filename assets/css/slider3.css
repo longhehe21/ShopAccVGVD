@@ -1,0 +1,60 @@
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  overflow: hidden; /* Ẩn phần nội dung vượt ra ngoài khung */
+}
+
+.mySlides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mySlides img {
+  max-height: 405px;
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5); /* Tạo background mờ cho nút prev và next */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slider-option {
+  display: flex;
+}
+
+.slideshow-event {
+  width: auto;
+}
+
+.slideshow-event a {
+  display: block;
+}
+
+
+.slider {
+  padding-top: calc(var(--header-height) + 20px);
+  margin-bottom: -32px;
+}

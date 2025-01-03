@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    height: 100px;
+    width: 100vw;
+    border-bottom: 2px solid#dddd;
+    text-align: center;
+}
+.admin-content{
+    display: flex;
+
+}
+.admin-content-left{
+    background-color: #dddddd;
+    width: 15%;
+    height: 100%;
+    padding: 30px 0 0 12px;
+}
+.admin-content-left >ul> li> a{
+    font-weight: bold;
+}
+.admin-content-left ul li{
+    margin: 6px 0;
+}
+.admin-content-left ul ul{
+    margin-left: 20px;
+}
+
+/* ---------------------------------------------------- */
+.admin-content-right{
+    width: 100%;
+    padding: 30px 0 50px 12px;
+}
+.admin-content-right-cartegory_add input{
+    height: 30px;
+    width: 200px;
+    padding-left: 12px;
+    margin-top: 20px;
+}
+.admin-content-right-cartegory_add button{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background: #333;
+    border: none;
+    color: white;
+    transition: all .3s ease;
+}
+.admin-content-right-cartegory_add button:hover{
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+/* ------------------Cartegory List---------------------------- */
+.admin-content-right-cartegory_list table{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.admin-content-right-select{
+        width: 200px;
+        height: 30px;
+        display: block;
+        margin: 6px 0;
+        padding-left: 12px;
+}
+.admin-content-right-cartegory_list table tr th,td{
+    border: 1px solid #dddddd;
+}
+table{
+    border-collapse: collapse;
+}
+/* ------------------Product List---------------------------- */
+.admin-content-right-product_list table{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.admin-content-right-product_list table tr th,td{
+    border: 1px solid #dddddd;
+}
+table{
+    border-collapse: collapse;
+}
+/* -------------------product-------------------- */
+
+.admin-content-right-product_add input,select{
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: 6px 0;
+    padding-left: 12px;
+}
+.admin-content-right-product_add textarea{
+    display: block;
+    height: 200px;
+    padding-left: 12px;
+    padding-top: 6px;
+    width: 500px;
+    margin-bottom: 12px;
+}
+.admin-content-right-product_add button{
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    background: #333;
+    border: none;
+    color: white;
+    transition: all .3s ease;
+}
+.admin-content-right-product_add button:hover{
+    background-color: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+/* -----------------product list--------------- */
+.product_list-app-search{
+    display: flex;
+    align-items: center;
+}
+.product_list-app-title{
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+.product_list-app{
+    margin-top: 20px;
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+}
+.product_list-app-search-title{
+    font-size: 18px;
+}
+.product_list-app-search-btn{
+    padding: 4px 8px;
+    min-width: 70px;
+    cursor: pointer;
+}
+.product_list-app-search-input{
+    margin: 0 20px;
+    padding: 5px 10px;
+}
+.product_list-app-filter{
+    display: flex;
+    align-items: center;
+}
+.product_list-app-filter-title{
+    font-size: 18px;
+}
+.product_list-app-filter-select{
+    margin: 0 20px;
+}
+.product_list-app-filter-option{
+    
+}
+.product_list-app-filter-btn{
+    padding: 5px 10px;
+    min-width: 70px;
+    cursor: pointer;
+}
+.product-images-prev{
+    position: absolute;
+    right: -3%;
+    bottom: 48%;
+}
+.product-images-next{
+    position: absolute;
+    left: -3%;
+    bottom: 48%;
+}
+.largeImageContent{
+    position: relative;
+}
+.product-images-icon{
+    color: #fff;
+    bottom: 50%;
+    font-size: 90px;
+}
+.product-images-button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* CSS cho modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
+  }
+  
+  /* CSS cho ảnh trong modal */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* CSS cho nút đóng modal */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+ .product-desc figure img{
+    max-width: 200px;
+    max-height: 200px;
+  }
+ 
+
+
+/* Nội dung modal */
+.product-desc-modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Đóng modal */
+.product-desc-close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.product-desc-close:hover,
+.product-desc-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ---------- modal product--------------- */
+.product_desc_modalContent figure img{
+    max-width: 1116px;
+    max-height:1116px ;
+}
